@@ -11,6 +11,7 @@ function start() {
   console.log("start");
   for (let i = 0; i < barAmount; i++) createBars(i);
 }
+
 function createBars(num) {
   console.log(`createBars`);
   let barElement = /*html*/ `
