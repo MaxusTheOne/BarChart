@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  pointer-events: none;
+  animation-duration: 1s;
+}
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  pointer-events: none;
+  overflow: hidden;
+  background-color: grey;
+}
+#ui {
+  width: 103%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.bar_obj {
+  position: relative;
+  background-color: green;
+  border: 2px solid greenyellow;
+  left: 5%;
+  width: 80%;
+  height: 0%;
+  top: 80%;
+}
+#ui {
+  display: grid;
+  grid-template-columns: repeat(41, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.move_left {
+  animation-name: moveLeft;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes moveLeft {
+  100% {
+    transform: translateX(-2.4%);
+  }
+}
